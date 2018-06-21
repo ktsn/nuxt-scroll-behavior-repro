@@ -1,0 +1,29 @@
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-enter-active {
+  position: relative;
+  transition: 800ms ease-out;
+  transition-property: opacity, transform;
+  z-index: 1;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.pege-leave-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: visibility 800ms linear;
+}
+
+.page-leave-to {
+  visibility: hidden;
+}
